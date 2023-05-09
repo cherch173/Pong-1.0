@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(25, 0, 25, .73);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 7vmin;
+    color: rgba(220, 20, 60, .86);
+    text-shadow: -1px 1px whitesmoke, -2px 2px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#gameContainer{
+    text-align: center;
+}
+
+#gameBoard{
+    border-radius: 13%;
+    border: 10px double rgba(147, 51, 68, 0.86);
+    background-color: rgba(246, 247, 255, .86);
+}
+
+#scoreText{
+    font-family: "consolas", monospace;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    background-color: black;
+    border: 4px double chartreuse;
+    color: whitesmoke;
+    text-shadow: -1px 1px chartreuse, -2px 2px black;
+    text-align: center;
+    max-width: 35%;
+
+}
+
+#resetBtn{
+    font-family: 'Russo One', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4vmin;
+    background-color: rgba(172, 53, 77, 0.86);
+    border: 4px double rgba(245, 245, 245, 0.73);
+    border-radius: 10%;
+    color: whitesmoke;
+    text-shadow: -1px 1px black;
+    margin-top: 3vmin;
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background-color: rgba(173, 106, 106, 0.86);
+    color: bisque;
+    transform: scale(1.1);
+    transition: transform 142ms ease-in;
+    border-color: rgba(48, 19, 19, 0.73);
+    cursor: pointer;
+}
