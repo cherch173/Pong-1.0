@@ -171,7 +171,7 @@ function updateScore(){
 };
 
 function getWinner() {
-    if (`${player1score} >= 5`) {
+    if (`${player1Score} >= 5`) {
         return winner;
     } else if (`${player2Score} >= 5`) {
         return winner;
