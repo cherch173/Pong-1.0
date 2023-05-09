@@ -171,36 +171,37 @@ function updateScore(){
 };
 
 function getWinner() {
-    if (`${player1Score} >= 5`) {
-        return winner;
-    } else if (`${player2Score} >= 5`) {
-        return winner;
+    if (player1Score = 5) {
+        
     }
 }
 
 function resetGame(){
-    player1Score = 0;
-    player2Score = 0;
-    paddle1 = {
-        width: 25,
-        height: 100,
-        x: 0,
-        y: 0
-    };
-    paddle2 = {
-        width: 25,
-        height: 100,
-        x: gameWidth - 25,
-        y: gameHeight - 100
-    };
-    puckSpeed = 1;
-    puckX = 0;
-    puckY = 0;
-    puckXDirection = 0;
-    puckYDirection = 0;
-    updateScore();
-    clearInterval(intervalID);
-    gameStart();
+    if (score = 5) {
+
+        player1Score = 0;
+        player2Score = 0;
+        paddle1 = {
+            width: 25,
+            height: 100,
+            x: 0,
+            y: 0
+        };
+        paddle2 = {
+            width: 25,
+            height: 100,
+            x: gameWidth - 25,
+            y: gameHeight - 100
+        };
+        puckSpeed = 1;
+        puckX = 0;
+        puckY = 0;
+        puckXDirection = 0;
+        puckYDirection = 0;
+        updateScore();
+        clearInterval(intervalID);
+        gameStart();
+    }
 };
 
 
