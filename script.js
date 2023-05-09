@@ -169,6 +169,15 @@ function changeDirection(event){
 function updateScore(){
     scoreText.textContent = `${player1Score} : ${player2Score}`;
 };
+
+function getWinner() {
+    if (`${player1score} >= 5`) {
+        return winner;
+    } else if (`${player2Score} >= 5`) {
+        return winner;
+    }
+}
+
 function resetGame(){
     player1Score = 0;
     player2Score = 0;
